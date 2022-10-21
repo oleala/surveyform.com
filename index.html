@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initiall-scale=1.0">
+        <title>Survey</title>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    </style>
+    <body>
+        <div class="main">
+       <h1 id="title">Desktop wallpapers</h1>
+       <p id="description">Show us what you like</p>
+
+       <div class="maincontent">
+           <div class="formcontent">
+       <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter name" name="name" required />
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter email" name="email" required />
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" placeholder="Enter age" min="15" max="100" />
+       
+        <label for="dropdown" id="lab">Type</label>
+        <select id="dropdown" list="join-list">
+            <option  value="firstoption">smartphones</option>
+            <option  value="secondoption">tablets</option>
+            <option  value="thirdoption">computers</option>
+        </select>
+        
+       <fieldset>
+            <legend>Type of color you like</legend>
+            <label for="cool" id="co">
+            <input type="radio" name="format"  id="cool"   value="cool">
+            <div class="circle"></div>
+           <span>cool</span><br>
+              </label>
+        <label for="warm" id="wa">
+            <input type="radio" name="format" id="warm"  value="warm">
+            <div class="circle"></div>
+            <span>warm</span>
+         </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Design of wallpaper you like </legend>
+            <label for="minimalist" id="mi">
+            <input type="checkbox" id="minimalist"  name="one" value="minimalist">
+            <div class="circle"></div>
+            <span>minimalist</span><br>
+            </label>
+            <label for="gradient color" id="gr">
+            <input type="checkbox" id="gradient color"  name="three" value="gradient color">
+            <div class="circle"></div>
+             <span>gradient color</span><br>
+            </label>
+             <label for="quote-inspired" id="qu">
+            <input type="checkbox" id="quote-inspired"  name="four" value="quote-inspired">
+            <div class="circle"></div>
+            <span>quote-inspired</span><br>
+            </label>
+             <label for="abstract" id="mo">
+           <input type="checkbox" id="abstract" name="six"  value="modern">
+           <div class="circle"></div>
+           <span>modern</span><br>
+           </label>
+         <label for="nature" id="na">
+           <input type="checkbox" id="nature"  name="seven"   value="nature">
+           <div class="circle"></div>
+           <span>nature</span><br>
+            </label>
+        </fieldset>
+
+          <fieldset>
+            <legend>You want to receive customized wallpapers via e-mail from us</legend>
+            <label for="yes" id="po">
+            <input type ="radio"  id="yes" name="customized" value="yes">
+            <div class="circle"></div>
+            <span>yes</span><br>
+            </label>
+            <label for="no" id="jo">
+            <input type="radio"  id="no"  name="customized" value="no">
+            <div class="circle"></div>
+            <span>no</span><br>
+            </label>
+
+    </fieldset>
+    <label for="comments" id="com">Add a comment</label><br>
+        <textarea name="comments"  id="comments" rows="1" cols="20" ></textarea>
+       
+        <button type ="submit" id="submit">Submit</button>
+    </form>
+    </div>
+    </div>
+    
+
+
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
